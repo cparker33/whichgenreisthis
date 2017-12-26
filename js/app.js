@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 
     $.ajax({
-      url: 'http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=' + event.target.value + '&api_key=bf3e244da691d8a28c50f8d7aa265d35&format=json',
+      url: 'https://ws.audioscrobbler.com/2.0/?method=artist.search&artist=' + event.target.value + '&api_key=bf3e244da691d8a28c50f8d7aa265d35&format=json',
       success: function(data) {
         var tags = data.results.artistmatches.artist;
         var tagsSliced = tags.slice(0, 1);
@@ -56,7 +56,7 @@ $(document).ready(function() {
         document.getElementById("tags").innerHTML ='';
 
         $.ajax({
-        url: 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' + autocomplete1 +'&api_key=bf3e244da691d8a28c50f8d7aa265d35&format=json',
+        url: 'https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' + autocomplete1 +'&api_key=bf3e244da691d8a28c50f8d7aa265d35&format=json',
          success: function(data) {
          $('.display').css('opacity','1');
            var tags = data.artist.tags.tag
