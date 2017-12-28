@@ -6,6 +6,7 @@ $(document).ready(function() {
     $.ajax({
       url: 'https://ws.audioscrobbler.com/2.0/?method=artist.search&artist=' + event.target.value + '&api_key=bf3e244da691d8a28c50f8d7aa265d35&format=json',
       success: function(data) {
+        
         var tags = data.results.artistmatches.artist;
         var tagsSliced = tags.slice(0, 1);
         var tagsSlicedRes = tagsSliced[0].name;
@@ -41,6 +42,12 @@ $(document).ready(function() {
     }
 
   });
+
+
+
+
+
+
 
   $('#main').keypress(function(e) {
     var key = e.which;
