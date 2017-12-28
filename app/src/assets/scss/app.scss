@@ -1,0 +1,32 @@
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+@import './components.scss';
+@import './routes.scss';
+
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+
+body {
+  background-color: #F2F2F2;
+}
+
+.app-component-wrapper {
+  width: 100%;
+}
+
+
+
+// FLEXES
+.flex-row-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

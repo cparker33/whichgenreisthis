@@ -1,0 +1,85 @@
+@import "utils/variables";
+
+.homepage-component {
+
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(#666, #111);
+    box-shadow: -10px 10px 15px 5px #444;
+
+  label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #CCC;
+  }
+
+  input {
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #111;
+  }
+  
+  .homepage-header {  
+    padding-top: 20px;
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      color: #CCC;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  .homepage-form {
+    width: 50%;
+    margin: auto; 
+  }
+
+  .homepage-submit {
+    width: 120px;
+    height: 35px;
+  }
+
+  .homepage-submit:hover {
+    cursor: pointer;
+  }
+
+  .homepage-result {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    // background: linear-gradient(#666, #111);
+
+    .result-artist-name {
+      font-family: 'Montserrat', sans-serif;
+      color: #CCC;
+      margin-top: 20px;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .result-artist-img {
+        width: 300px;
+        height: 350px;
+        border: none;
+      
+    }
+
+    .result-artist-tags {
+      width: 300px;
+      height: 350px;
+      border: 1px solid #FFF;
+    }
+  }
+
+}
+
+
